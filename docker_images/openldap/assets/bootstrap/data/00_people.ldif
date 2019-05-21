@@ -1,0 +1,5 @@
+dn: ou=people,dc=smartdeployevo,dc=com
+objectClass: top
+objectClass: organizationalUnit
+description: SmartDeploy Evo crew
+ou: people

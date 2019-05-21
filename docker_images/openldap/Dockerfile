@@ -1,5 +1,5 @@
 FROM debian:stretch-slim
-MAINTAINER Rafael Römhild <rafael@roemhild.de>
+MAINTAINER Steve Davis <tilt.shift.71@gmail.com>
 
 # Install slapd and requirements
 RUN apt-get update \
@@ -15,10 +15,10 @@ RUN apt-get update \
 ENV LDAP_DEBUG_LEVEL=256
 
 # ADD run script
-COPY ./run.sh /run.sh
+COPY ./assets/run.sh /run.sh
 
 # ADD bootstrap files
-ADD ./bootstrap /bootstrap
+ADD ./assets/bootstrap /bootstrap
 
 # Initialize LDAP with data
 RUN /bin/bash /bootstrap/slapd-init.sh

@@ -4,10 +4,10 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=planetexpress.com
-readonly LDAP_ORGANISATION="Planet Express, Inc."
-readonly LDAP_BINDDN="cn=admin,dc=planetexpress,dc=com"
-readonly LDAP_SECRET=GoodNewsEveryone
+readonly LDAP_DOMAIN=smartdeployevo.com
+readonly LDAP_ORGANISATION="SmartDeploy Evo"
+readonly LDAP_BINDDN="cn=admin,dc=smartdeployevo,dc=com"
+readonly LDAP_SECRET=P4ssW0rd!
 
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
 readonly LDAP_SSL_CERT="/etc/ldap/ssl/ldap.crt"

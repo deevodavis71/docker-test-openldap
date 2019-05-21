@@ -1,0 +1,13 @@
+dn: cn=Stuart Pretorius,ou=people,dc=smartdeployevo,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Stuart
+sn: Pretorius
+description: Human
+givenName: Stuart
+mail: stuartp@smartdeployevo.com
+ou: Intern
+uid: stuart
+userPassword: P4ssW0rd!

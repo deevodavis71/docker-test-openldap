@@ -1,0 +1,7 @@
+dn: cn=admin_staff,ou=people,dc=smartdeployevo,dc=com
+objectclass: Group
+objectclass: top
+groupType: 2147483650
+cn: admin_staff
+member: cn=Hubert J. Farnsworth,ou=people,dc=smartdeployevo,dc=com
+member: cn=Hermes Conrad,ou=people,dc=smartdeployevo,dc=com
