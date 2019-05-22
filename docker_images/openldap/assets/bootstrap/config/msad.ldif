@@ -17,3 +17,48 @@ olcObjectClasses: ( 1.2.840.113556.1.5.8 NAME 'Group'
         SUP top STRUCTURAL
         MUST ( groupType $ cn)
         MAY ( member ) )
+
+###################################################################
+
+#### https://directory.apache.org/apacheds/basic-ug/2.3.1-adding-schema-elements.html
+
+dn: cn={0}core,cn=schema,cn=config
+changetype: modify
+add: olcAttributetypes
+olcAttributetypes: ( 1.2.840.113556.1.4.751 NAME 'numberOfGuns'
+   DESC 'Number of guns of a ship'
+   EQUALITY integerMatch
+           SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+           SINGLE-VALUE
+ )
+
+
+dn: cn={0}core,cn=schema,cn=config
+changetype: modify
+add: olcObjectClasses
+olcObjectClasses: ( 1.2.840.113556.1.5.9 NAME 'ship'
+        DESC 'An entry which represents a ship'
+        SUP top AUXILIARY
+        MUST ( cn)
+        MAY ( numberOfGuns ) )
+
+###################################################################
+
+dn: cn={0}core,cn=schema,cn=config
+changetype: modify
+add: olcAttributetypes
+olcAttributetypes: ( 1.2.840.113556.1.4.752 NAME 'sdEvoRoleName'
+   DESC 'SmartDeploy Evolution Role Name'
+   SYNTAX 1.3.6.1.4.1.1466.115.121.1.44
+   SINGLE-VALUE
+ )
+
+
+dn: cn={0}core,cn=schema,cn=config
+changetype: modify
+add: olcObjectClasses
+olcObjectClasses: ( 1.2.840.113556.1.5.10 NAME 'SDEvo'
+        DESC 'SmartDeploy Evolution Custom Attributes'
+        SUP top AUXILIARY
+        MUST ( cn)
+        MAY ( sdEvoRoleName ) )

@@ -3,6 +3,7 @@ objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: SDEvo
 cn: Stuart
 sn: Pretorius
 description: Human
@@ -11,3 +12,4 @@ mail: stuartp@smartdeployevo.com
 ou: Intern
 uid: stuart
 userPassword: P4ssW0rd!
+sdEvoRoleName: WORKER

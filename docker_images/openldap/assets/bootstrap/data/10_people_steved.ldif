@@ -3,6 +3,8 @@ objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: ship
+objectClass: SDEvo
 cn: Steve
 sn: Davis
 description: Human
@@ -11,3 +13,5 @@ mail: steved@smartdeployevo.com
 ou: Intern
 uid: steve
 userPassword: P4ssW0rd!
+numberOfGuns: 100
+sdEvoRoleName: ADMIN
